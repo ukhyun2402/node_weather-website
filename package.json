@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass /home/hyun4911/udemy/webServer/public/scss/$file.scss /home/hyun4911/udemy/webServer/public/css/$file.css",
-    "sassing": "node-sass -w /home/hyun4911/udemy/webServer/public/scss/$file.scss /home/hyun4911/udemy/webServer/public/css/$file.css"
+    "sassing": "node-sass -w /home/hyun4911/udemy/webServer/public/scss/$file.scss /home/hyun4911/udemy/webServer/public/css/$file.css",
+    "start":"node src/app.js"
   },
   "keywords": [],
   "author": "",
