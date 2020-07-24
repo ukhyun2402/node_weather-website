@@ -59,11 +59,13 @@ app.get('/weather', (req, res) => {
         }
         forecast.forecast(longitude, latitude, (err, {current}) => {
             if(err) { 
-                console.log('here');
                 return res.send(err);
             }
             res.send({
-                forecast:current.weather_descriptions[0],
+                forecast:{
+                    weather:current.weather_descriptions[0],
+                    temp: current.temperature,
+                },
                 location,
                 address: req.query.address,
             });

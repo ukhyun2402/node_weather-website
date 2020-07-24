@@ -20,7 +20,8 @@ weatherForm.addEventListener('submit', (e) => {
             } else {
                 console.log(data);
                 messageOne.textContent = data.location;
-                messageTwo.textContent = data.forecast;
+                messageTwo.textContent = data.forecast.weather + ' and Temperature => ' + data.forecast.temp;
+                messageTwo.appendChild(document.createTextNode("°"));
             }
         });
     });
